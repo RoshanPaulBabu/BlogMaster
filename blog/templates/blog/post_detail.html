@@ -8,8 +8,9 @@
     </a>
     <a class="btn btn-secondary" href="{% url 'post_remove' pk=post.pk %}"><span class="bi bi-trash-fill"></span></a>
     <!-- Add a button to redirect to the summarized content page -->
-    <a class="btn btn-secondary" href="{% url 'summarize' pk=post.pk %}">Summarize</a>
+    
     {% endif %}
+    <a class="btn btn-secondary" href="{% url 'summarize' pk=post.pk %}">Summarize</a>
   </aside>
   {% if post.published_date %}
     <div class="date">

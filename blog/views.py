@@ -162,4 +162,12 @@ def comment_approve(request, pk):
 def comment_remove(request, pk):
     comment = get_object_or_404(Comment, pk=pk)
     comment.delete()
-    return redirect('post_detail', pk=comment.post.pk)
+    return redirect('post_detail', pk=comment.post.pk)\
+      
+      
+from django.contrib.auth import logout      
+  
+@login_required
+def logout_view(request):
+    logout(request)
+    return redirect('post_list')

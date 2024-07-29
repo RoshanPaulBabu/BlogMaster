@@ -1,7 +1,7 @@
 
 
 .page-header {
-    background-color: #C25100;
+    background-color: #0a0a0a;
     margin-top: 0;
     margin-bottom: 40px;
     padding: 20px 20px 20px 40px;
@@ -61,14 +61,14 @@ h4 {
 
 .btn-secondary,
 .btn-secondary:visited {
-    color: #C25100;
+    color: #0a0a0a;
     background: none;
-    border-color: #C25100;
+    border-color: #0a0a0a;
 }
 
 .btn-secondary:hover {
     color: #FFFFFF;
-    background-color: #C25100;
+    background-color: #0a0a0a;
 }
 
 .comment {
